@@ -32,6 +32,12 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f",total)
     }
+    @IBAction func didTapOptions(_ sender: Any) {
+        performSegue(withIdentifier: "settingsSegue", sender: self)
+        
+        
+        
+    }
     
 }
 
