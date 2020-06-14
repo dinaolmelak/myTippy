@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C06B48592494A60C002F0C16 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B48582494A60C002F0C16 /* OptionsViewController.swift */; };
 		C08E6F0A23FF69FE005C6F96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E6F0923FF69FE005C6F96 /* AppDelegate.swift */; };
 		C08E6F0C23FF69FE005C6F96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E6F0B23FF69FE005C6F96 /* SceneDelegate.swift */; };
 		C08E6F0E23FF69FE005C6F96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E6F0D23FF69FE005C6F96 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C06B48582494A60C002F0C16 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		C08E6F0623FF69FE005C6F96 /* myTippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myTippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08E6F0923FF69FE005C6F96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C08E6F0B23FF69FE005C6F96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				C08E6F1223FF6A0A005C6F96 /* Assets.xcassets */,
 				C08E6F1423FF6A0A005C6F96 /* LaunchScreen.storyboard */,
 				C08E6F1723FF6A0A005C6F96 /* Info.plist */,
+				C06B48582494A60C002F0C16 /* OptionsViewController.swift */,
 			);
 			path = myTippy;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C08E6F0E23FF69FE005C6F96 /* ViewController.swift in Sources */,
+				C06B48592494A60C002F0C16 /* OptionsViewController.swift in Sources */,
 				C08E6F0A23FF69FE005C6F96 /* AppDelegate.swift in Sources */,
 				C08E6F0C23FF69FE005C6F96 /* SceneDelegate.swift in Sources */,
 			);
