@@ -25,18 +25,26 @@ class ViewController: UIViewController {
         }
         
         setColor()
+        if let num = UserDefaults.standard.value(forKey: "lastBill") as? Double{
+            let lastNum = String(format: "%.0f", num)
+            textField.text! = lastNum
+            calculated(self)
+
+        }
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         setColor()
         textField.becomeFirstResponder()
     }
-//    override func viewDidAppear(_ animated: Bool) {
-//        setColor()
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
 
     @IBAction func calculated(_ sender: Any) {
         // get the data
         let bill = Double(textField.text!) ?? 0.00
+        UserDefaults.standard.set(bill, forKey: "lastBill")
         // calculate the tip
         let tipPercent = [0.15, 0.18, 0.2]
         let tip = bill * tipPercent[segmentControl.selectedSegmentIndex]

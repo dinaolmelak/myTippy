@@ -27,12 +27,12 @@ class OptionsViewController: UIViewController {
 
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 0.5) {
             self.colorOptionLabel.center.x += self.view.bounds.width
             self.colorSwitcher.center.x -= self.view.bounds.width
         }
 
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 0.6) {
             self.resetButton.center.y -= self.view.bounds.height
         }
         
