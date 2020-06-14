@@ -12,18 +12,30 @@ class OptionsViewController: UIViewController {
 
     
     var color = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    @IBOutlet weak var colorOptionLabel: UILabel!
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var colorSwitcher: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         setColor()
+        
         // Do any additional setup after loading the view.
         resetButton.center.y += view.bounds.height
+        colorOptionLabel.center.x -= self.view.bounds.width
+        self.colorSwitcher.center.x += self.view.bounds.width
     }
+
+    
     override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 1) {
+            self.colorOptionLabel.center.x += self.view.bounds.width
+            self.colorSwitcher.center.x -= self.view.bounds.width
+        }
+
         UIView.animate(withDuration: 1) {
             self.resetButton.center.y -= self.view.bounds.height
         }
+        
     }
     @IBAction func tapSwitch(_ sender: Any) {
         if colorSwitcher.selectedSegmentIndex == 0{

@@ -36,7 +36,7 @@ class ViewController: UIViewController {
 
     @IBAction func calculated(_ sender: Any) {
         // get the data
-        let bill = Double(textField.text!) ?? 0
+        let bill = Double(textField.text!) ?? 0.00
         // calculate the tip
         let tipPercent = [0.15, 0.18, 0.2]
         let tip = bill * tipPercent[segmentControl.selectedSegmentIndex]
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         //var fv = 3534234.55
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
-        formatter.maximumFractionDigits = 0;
+        formatter.maximumFractionDigits = 2;
         //resultFV.text = formatter.stringFromNumber(fv) // result: $3,534,235 –
         //-----
         // display the tip

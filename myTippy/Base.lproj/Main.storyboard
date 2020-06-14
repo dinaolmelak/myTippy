@@ -112,14 +112,16 @@
                                     <action selector="didTapReset:" destination="220-HT-cm4" eventType="touchUpInside" id="eoU-Vn-4Jd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V06-UN-EYS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V06-UN-EYS">
                                 <rect key="frame" x="16" y="135" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QlM-Ig-gJN">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QlM-Ig-gJN">
                                 <rect key="frame" x="132" y="125" width="227" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Red"/>
                                     <segment title="Blue"/>
@@ -132,16 +134,11 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="BP1-5b-nNr" firstAttribute="trailing" secondItem="QlM-Ig-gJN" secondAttribute="trailing" constant="16" id="OtQ-yj-OjL"/>
-                            <constraint firstItem="QlM-Ig-gJN" firstAttribute="bottom" secondItem="V06-UN-EYS" secondAttribute="bottom" id="bSs-5M-Tek"/>
-                            <constraint firstItem="V06-UN-EYS" firstAttribute="top" secondItem="BP1-5b-nNr" secondAttribute="top" constant="91" id="k3R-2z-5vc"/>
-                            <constraint firstItem="V06-UN-EYS" firstAttribute="leading" secondItem="BP1-5b-nNr" secondAttribute="leading" constant="16" id="klA-eI-MQo"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BP1-5b-nNr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="CBE-Jq-haA"/>
                     <connections>
+                        <outlet property="colorOptionLabel" destination="V06-UN-EYS" id="Gq0-fQ-OGN"/>
                         <outlet property="colorSwitcher" destination="QlM-Ig-gJN" id="cAl-lN-7Gv"/>
                         <outlet property="resetButton" destination="EOl-oM-qtQ" id="k1p-P7-yOm"/>
                     </connections>
